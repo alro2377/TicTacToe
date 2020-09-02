@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<title>
+	Tic Tac Toe
+</title>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="game.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1 id="header1" class="center">
+		Tic Tac Toe
+	</h1>
+
+	<form id="names">
+		Player 1 Name:<br>
+		<input type="text" id="name1" value="Player1">
+		<br>
+		Player 2 Name:<br>
+		<input type="text" id="name2" value="Player2">
+		<br>
+	</form> 
+
+	<div class="centerButton">
+		<button onclick="welcome()">Input names</button>
+	</div>
+
+	<br><br>
+	
+
+	<div class ="board-container">
+		<div class = "flex-center">
+			<div class ="winner"></div>
+			<button class="reset">Reset</button>
+		</div>
+
+		<div class="board">
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div>
+			<div class ="square"></div> 
+		</div>
+	</div>
+
+	<br>
+
+	<div class="colorButtons">
+
+		<button onclick="cssSwapper()">Pink</button>
+
+		<button onclick="cssSwapper2()">Blue</button>
+
+		<button onclick="cssSwapper3()">Green</button>
+
+		<button onclick="cssSwapper4()">Purple</button>
+
+	</div>
+</body>
+<script src="game.js"></script>
+
+
+</html>
